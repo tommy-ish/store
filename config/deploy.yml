@@ -2,12 +2,12 @@
 service: store
 
 # Name of the container image (use your-user/app-name on external registries).
-image: store
+image: tomohiroishii/store
 
 # Deploy to these servers.
 servers:
   web:
-    - 192.168.0.1
+    - 153.121.37.59
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -20,9 +20,9 @@ servers:
 #
 # Don't use this when deploying to multiple web servers (then you have to terminate SSL at your load balancer).
 #
-# proxy:
-#   ssl: true
-#   host: app.example.com
+proxy:
+  ssl: true
+  host: app.example.com
 
 # Where you keep your container images.
 registry:
